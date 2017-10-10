@@ -22,6 +22,7 @@ public class InputData {
                 stop = true;
                 System.out.println("Błąd! Niedozwolony znak! Wprowadź wartość liczbową!");
                 battery.setCapacity(0);
+                scanner.nextLine();
             }
         } while (stop);
         return battery;
